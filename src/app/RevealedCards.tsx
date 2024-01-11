@@ -27,7 +27,13 @@ export const RevealedCards = () => {
         return (
           <Link href={`/arcana#section${sectionNumber}`} key={index} passHref>
             <div style={{ cursor: 'pointer' }} className={cardInfo.hasRedBorder ? 'border-red-700 border-2' : ''}>
-              <Image src={`/${cardInfo.filename}`} alt={`Revealed Card ${index}`} width={100} height={200} />
+              <Image 
+                src={`/${cardInfo.filename}`} 
+                alt={`Revealed Card ${index}`} 
+                width={100} 
+                height={200} 
+                loading="eager"  // Added eager loading here
+              />
             </div>
           </Link>
         );
