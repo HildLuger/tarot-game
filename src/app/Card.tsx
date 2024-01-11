@@ -36,6 +36,7 @@ export const ArcanaCard = () => {
           width={200}
           height={400}
           className={styles.cardImage}
+          loading="eager" 
           priority={currentCard === "Arcana0.jpg"} // Add priority if the current card is Arcana0.jpg
         
         />
