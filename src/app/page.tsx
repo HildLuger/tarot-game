@@ -10,7 +10,7 @@ import RevealedCards from './RevealedCards';
 import ResetButton from './ResetButton';
 
 
-function Home({ Component, pageProps }: AppProps) {
+function Home() {
   return (
     <Provider store={store}>
       {/* Full-screen container */}
